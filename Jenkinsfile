@@ -1,6 +1,4 @@
 @Library(["jenkins-shared"]) _
 
 
-node {
-    apiPipeline
-}
+apiPipeline(param: "merhaba")
