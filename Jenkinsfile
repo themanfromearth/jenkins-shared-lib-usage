@@ -1,3 +1,13 @@
-library identifier: 'jenkins-shared', retriever: modernSCM([$class: 'GitSCMSource', credentialsId: 'themanfromearth', remote: 'git@github.com:themanfromearth/jenkins-shared-lib.git'])
+@Library(["jenkins-shared"]) _
 
-apiPipeline
+
+pipeline {
+    agent any
+    stages {
+        stage('Begin') {
+            steps {
+                apiPipeline
+            }
+        }
+    }
+}
