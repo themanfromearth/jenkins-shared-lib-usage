@@ -1,4 +1,4 @@
 @Library(["jenkins-shared"]) _
 
 
-apiPipeline(param: "merhaba")
+apiPipeline(param: "merhaba", param2: "ali")
