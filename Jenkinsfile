@@ -1,3 +1,7 @@
 @Library('jenkins-shared') _
 
-apiPipeline
+node {
+  stage('JIRA') {
+    apiPipeline
+  }
+}
