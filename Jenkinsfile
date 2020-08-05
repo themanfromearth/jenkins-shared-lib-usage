@@ -1,3 +1,6 @@
 @Library('jenkins-shared') _
 
-apiPipeline()
+stage('Demo') {
+     echo 'Hello world'
+     apiPipeline()
+ }
